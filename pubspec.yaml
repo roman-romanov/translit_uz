@@ -1,6 +1,6 @@
 name: translit_uz
 description: Simple dart package for converting Cyrillic Uzbek symbols to Translit UZ and back
-version: 1.1.0
+version: 1.1.1
 
 homepage: https://github.com/roman-romanov/translit_uz.git
 
