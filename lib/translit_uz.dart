@@ -1,4 +1,4 @@
-library translit;
+library translit_uz;
 
 /// Simple dart package for converting Cyrillic symbols to Translit and back
 class Translit {

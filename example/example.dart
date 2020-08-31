@@ -1,4 +1,4 @@
-import 'package:translit_uz/translit.dart';
+import 'package:translit_uz/translit_uz.dart';
 
 main() {
   String forTransliterate =

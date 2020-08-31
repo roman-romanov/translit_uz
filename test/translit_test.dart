@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:translit_uz/translit.dart';
+import 'package:translit_uz/translit_uz.dart';
 
 void main() {
   test('words translit', () {
