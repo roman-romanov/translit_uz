@@ -123,8 +123,8 @@ class Translit {
 
     if (!regExp.hasMatch(source)) return source;
     
-    if(regExp.hasMatch(r'(^[e]+)'))return "ye";
-    if(regExp.hasMatch(r'($[ev]+)'))return "yev";
+    if(regExp.hasMatch(r'(^[e])'))return "ye";
+    if(regExp.hasMatch(r'($[ev])'))return "yev";
 
     var sourceSymbols = [];
     var unTranslit = [];
