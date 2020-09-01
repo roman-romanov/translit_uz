@@ -1,9 +1,9 @@
 # About
 
 [![Build Status](https://travis-ci.com/roman-romanov/translit_uz.svg?branch=master)](https://travis-ci.org/roman-romanov/translit_uz_)
-[![Pub Package](https://img.shields.io/pub/v/translit.svg)](https://pub.dartlang.org/packages/translit_uz)
+[![Pub Package](https://img.shields.io/pub/v/translit_uz.svg)](https://pub.dartlang.org/packages/translit_uz)
 
-Simple dart package for converting Cyrillic symbols to Translit and back
+Simple dart package for converting Cyrillic Uzbek symbols to Translit Uz  and back
 
 Reverse transliteration into Cyrillic can not always completely convert the text to the original. Please keep this in mind when using this module in your projects.
 
