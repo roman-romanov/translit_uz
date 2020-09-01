@@ -1,16 +1,35 @@
-# translit_uz
+# About
 
-A new Flutter project.
+[![Build Status](https://travis-ci.com/roman-romanov/translit_uz.svg?branch=master)](https://travis-ci.org/roman-romanov/translit_uz_)
+[![Pub Package](https://img.shields.io/pub/v/translit.svg)](https://pub.dartlang.org/packages/translit_uz)
 
-## Getting Started
+Simple dart package for converting Cyrillic symbols to Translit and back
 
-This project is a starting point for a Flutter application.
+Reverse transliteration into Cyrillic can not always completely convert the text to the original. Please keep this in mind when using this module in your projects.
 
-A few resources to get you started if this is your first Flutter project:
+## Examples
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Convert text to translit
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:translit_uz/translit_uz.dart';
+
+String text = Translit().toTranslit(source: 'Салом дунё');
+```
+
+Салом дунё > Salom dunyo!
+
+
+### Convert text from transliterated
+
+```dart
+import 'package:translit/translit.dart';
+
+String text = Translit().unTranslit(source: 'Salom dunyo');
+```
+
+Salom dunyo > Салом дунё
+
+## Contribute
+
+Please feel free to fork, improve, make pull requests or fill issues. I'll be glad to fix bugs you encountered or improve the extension.
