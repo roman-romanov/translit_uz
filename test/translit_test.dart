@@ -4,16 +4,16 @@ import 'package:translit_uz/translit_uz.dart';
 void main() {
   test('words translit', () {
     Translit translit = Translit();
-    expect(translit.toTranslit(source: 'салом дунё'), 'salom dunyo');
+    expect(translit.toTranslit(source: 'Салом дунё'), 'Salom dunyo');
     expect(translit.toTranslit(source: 'Даъват'), 'Da\'vat');
     expect(translit.toTranslit(source: 'Лекин'), 'Lekin');
   });
 
   test('words untranslit', () {
     Translit translit = Translit();
-    expect(translit.unTranslit(source: 'salom dunyo'), 'салом дунё');
-    expect(translit.unTranslit(source: 'Da\'vat'), 'Даъват');
-    expect(translit.unTranslit(source: 'Лекин'), 'Lekin');
+    expect(translit.unTranslit(source: 'Salom dunyo'), 'Салом дунё');
+    expect(translit.unTranslit(source: 'Da‘vat'), 'Даъват');
+    expect(translit.unTranslit(source: 'Lekin'), 'Лекин');
   });
 
   test(
