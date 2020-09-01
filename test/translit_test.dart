@@ -5,7 +5,7 @@ void main() {
   test('words translit', () {
     Translit translit = Translit();
     expect(translit.toTranslit(source: 'Салом дунё'), 'Salom dunyo');
-    expect(translit.toTranslit(source: 'Даъват'), 'Da\'vat');
+    expect(translit.toTranslit(source: 'Даъват'), 'Da‘vat');
     expect(translit.toTranslit(source: 'Лекин'), 'Lekin');
   });
 
