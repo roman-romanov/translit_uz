@@ -82,7 +82,6 @@ class Translit {
     'Я': 'Ya',
 
     'ғ': "g‘",
-    'е': 'ye',
     'аева': 'ayeva',
     'аев': 'ayev',
     'ева': 'yeva',
