@@ -7,9 +7,6 @@ void main() {
     expect(translit.toTranslit(source: 'Салом дунё'), 'Salom dunyo');
     expect(translit.toTranslit(source: 'Даъват'), 'Da‘vat');
     expect(translit.toTranslit(source: 'Лекин'), 'Lekin');
-    //expect(translit.toTranslit(source: 'Абдуллаев'), 'Abdullayev');
-    expect(translit.toTranslit(source: 'Келажак'), 'Kelajak');
-    expect(translit.toTranslit(source: 'Мендан сенга'), 'Mendan senga');
   });
 
   test('words untranslit', () {
@@ -17,9 +14,6 @@ void main() {
     expect(translit.unTranslit(source: 'Salom dunyo'), 'Салом дунё');
     expect(translit.unTranslit(source: 'Da‘vat'), 'Даъват');
     expect(translit.unTranslit(source: 'Lekin'), 'Лекин');
-    //expect(translit.toTranslit(source: 'Abdullayev'), 'Абдуллаев');
-    expect(translit.toTranslit(source: 'Kelajak'), 'Келажак');
-    expect(translit.toTranslit(source: 'Mendan senga'), 'Мендан сенга');
   });
 
   test(
