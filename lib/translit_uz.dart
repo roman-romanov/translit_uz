@@ -158,7 +158,7 @@ class Translit {
     );
 
     if (!regExp.hasMatch(source)) return source;
-    source = source.replaceFirst('[ayev]', 'аев');//
+    source = source.replaceFirst('[аев]', 'ayev');//
     var translit = [];
     var sourceSymbols = [];
 
