@@ -57,23 +57,7 @@ class Translit {
   final Map _complicatedSymbols = {
     'Ғ': "G‘",
     'Е': 'Ye',
-    // 'Бе': 'Be',
-    // 'Ве': 'Ve',
-    // 'Ге': 'Ge',
-    // 'Де': 'De',
     'Ё': 'Yo',
-    // 'Ке': 'Ke',
-    // 'Ле': 'Le',
-    // 'Ме': 'Me',
-    // 'Не': 'Ne',
-    // 'Пе': 'Pe',
-    // 'Ре': 'Re',
-    // 'Се': 'Se',
-    // 'Те': 'Te',
-    // 'Хе': 'Xe',
-    // 'Ҳе': 'He',
-    // 'Че': 'Che',
-    // 'Зе': 'Ze',
     'Ў': "O‘",
     'Ц': 'Ts',
     'Ч': 'Ch',
@@ -81,26 +65,8 @@ class Translit {
     'Ю': 'Yu',
     'Я': 'Ya',
     'ғ': "g‘",
-    // 'ев': 'yev',
-    // 'ева': 'yeva',
-    'е': 'e',
+    'е': 'ye',
     'ё': 'yo',
-    // 'бе': 'be',
-    // 'ве': 've',
-    // 'ге': 'ge',
-    // 'де': 'de',
-    // 'ке': 'ke',
-    // 'ле': 'le',
-    // 'ме': 'me',
-    // 'не': 'ne',
-    // 'пе': 'pe',
-    // 'ре': 're',
-    // 'се': 'se',
-    // 'те': 'te',
-    // 'хе': 'xe',
-    // 'ҳе': 'he',
-    // 'че': 'che',
-    // 'зе': 'ze',
     'ў': "o‘",
     'ц': 'ts',
     'ч': 'ch',
@@ -122,7 +88,6 @@ class Translit {
     );
 
     //if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
-    source = source.replaceFirst('[ayev]', 'аев');//
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
@@ -158,7 +123,6 @@ class Translit {
     );
 
     if (!regExp.hasMatch(source)) return source;
-    source = source.replaceFirst('[аев]', 'ayev');//
     var translit = [];
     var sourceSymbols = [];
 
