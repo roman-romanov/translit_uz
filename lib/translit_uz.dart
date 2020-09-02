@@ -121,7 +121,7 @@ class Translit {
       multiLine: true,
     );
 
-    //if (regExp.hasMatch(r'([^е])')) return 'ye'; //
+    if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
     //source = source.replaceFirst('e', 'ye');//
     if (!regExp.hasMatch(source)) return source;
 
@@ -144,7 +144,6 @@ class Translit {
           ? deTransliteratedSymbol[element]
           : element);
     }
-    if (regExp.hasMatch(r'([^е])')) return 'ye'; //
     return unTranslit.join();
   }
 
