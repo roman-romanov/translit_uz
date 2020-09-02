@@ -16,6 +16,7 @@ void main() {
     expect(translit.unTranslit(source: 'Salom dunyo'), 'Салом дунё');
     expect(translit.unTranslit(source: 'Da‘vat'), 'Даъват');
     expect(translit.unTranslit(source: 'Lekin'), 'Лекин');
+    expect(translit.unTranslit(source: 'Jo‘rayev'), 'Жўраев');
     expect(translit.unTranslit(source: 'yer'), 'ер');
   });
 
