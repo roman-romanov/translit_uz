@@ -121,8 +121,8 @@ class Translit {
       multiLine: true,
     );
 
-    if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
-    //source = source.replaceFirst('e', 'ye');//
+    //if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
+    source = source.replaceFirst('[/^\D+e/]', 'ye');//
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
