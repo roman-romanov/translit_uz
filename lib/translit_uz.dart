@@ -122,7 +122,7 @@ class Translit {
     );
 
     //if (regExp.hasMatch(r'([^е])')) return 'ye'; //
-
+    //source = source.replaceFirst('e', 'ye');//
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
@@ -137,7 +137,6 @@ class Translit {
 
     _transliteratedSymbol.forEach((key, value) {
       deTransliteratedSymbol[value] = key;
-      source = source.replaceFirst('e', 'ye');//
     });
 
     for (final element in sourceSymbols) {
@@ -145,7 +144,7 @@ class Translit {
           ? deTransliteratedSymbol[element]
           : element);
     }
-
+    if (regExp.hasMatch(r'([^е])')) return 'ye'; //
     return unTranslit.join();
   }
 
