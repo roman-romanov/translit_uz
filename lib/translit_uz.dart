@@ -56,7 +56,7 @@ class Translit {
 
   final Map _complicatedSymbols = {
     'Ғ': "G‘",
-    'Е': 'YE',
+    'Е': 'Ye',
     'Ё': 'Yo',
     'Ў': "O‘",
     'Ш': 'Sh',
