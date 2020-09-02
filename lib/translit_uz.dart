@@ -122,7 +122,7 @@ class Translit {
     );
 
     //if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
-    source = source.replaceFirst('[/^\D+e/]', 'ye');//
+    source = source.replaceFirst('[ayev]', 'аев');//
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
