@@ -131,13 +131,13 @@ class Translit {
 
     _complicatedSymbols.forEach((key, value) {
       source = source.replaceAll(value, key);
-      source = source.replaceFirst('e', 'ye');//
     });
 
     sourceSymbols = source.split('');
 
     _transliteratedSymbol.forEach((key, value) {
       deTransliteratedSymbol[value] = key;
+      source = source.replaceFirst('e', 'ye');//
     });
 
     for (final element in sourceSymbols) {
