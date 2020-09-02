@@ -13,7 +13,7 @@ void main() {
     //expect(translit.unTranslit(source: 'ер'), 'yer');
     //expect(translit.unTranslit(source: 'мева'), 'meva');
     //expect(translit.unTranslit(source: 'Эркин'), 'Erkin');
-    expect(translit.unTranslit(source: 'Емоқ'), 'Yemoq');
+    //expect(translit.unTranslit(source: 'Емоқ'), 'Yemoq');
   });
 
   test('words untranslit', () {
@@ -28,7 +28,7 @@ void main() {
     //expect(translit.unTranslit(source: 'yer'), 'ер');
     //expect(translit.unTranslit(source: 'meva'), 'мева');
     //expect(translit.unTranslit(source: 'Erkin'), 'Эркин');
-    expect(translit.unTranslit(source: 'Yemoq'), 'Емоқ');
+    //expect(translit.unTranslit(source: 'Yemoq'), 'Емоқ');
   });
 
   test(
