@@ -121,8 +121,8 @@ class Translit {
       multiLine: true,
     );
 
-    if (regExp.hasMatch(r'([^е])')) return 'ye'; //
-   
+    //if (regExp.hasMatch(r'([^е])')) return 'ye'; //
+
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
@@ -131,6 +131,7 @@ class Translit {
 
     _complicatedSymbols.forEach((key, value) {
       source = source.replaceAll(value, key);
+      source = source.replaceFirst('e', 'ye');//
     });
 
     sourceSymbols = source.split('');
