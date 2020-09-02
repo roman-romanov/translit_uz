@@ -1,4 +1,4 @@
-library translit_uz;
+library translit;
 
 /// Simple dart package for converting Cyrillic symbols to Translit and back
 class Translit {
@@ -32,7 +32,7 @@ class Translit {
     'в': 'v',
     'г': 'g',
     'д': 'd',
-    'е': 'ye',
+    'е': 'e',
     'ж': 'j',
     'з': 'z',
     'и': 'i',
@@ -56,21 +56,20 @@ class Translit {
 
   final Map _complicatedSymbols = {
     'Ғ': "G‘",
-    'Е': 'Ye',
+    'Е': 'YE',
     'Ё': 'Yo',
     'Ў': "O‘",
+    'Ш': 'Sh',
     'Ц': 'Ts',
     'Ч': 'Ch',
-    'Ш': 'Sh',
     'Ю': 'Yu',
     'Я': 'Ya',
     'ғ': "g‘",
-    'е': 'ye',
     'ё': 'yo',
     'ў': "o‘",
+    'ш': 'sh',
     'ц': 'ts',
     'ч': 'ch',
-    'ш': 'sh',
     'ъ': "‘",
     'ь': "‘",
     'ю': 'yu',
