@@ -65,7 +65,7 @@ class Translit {
     'Ю': 'Yu',
     'Я': 'Ya',
     'ғ': "g‘",
-    'е': 'e',
+    'е': 'ye',
     'ё': 'yo',
     'ў': "o‘",
     'ц': 'ts',
@@ -87,7 +87,6 @@ class Translit {
       multiLine: true,
     );
 
-    //if (regExp.hasMatch('[/^\D+e/]')) return 'ye'; //
     if (!regExp.hasMatch(source)) return source;
 
     var sourceSymbols = [];
@@ -109,6 +108,7 @@ class Translit {
           ? deTransliteratedSymbol[element]
           : element);
     }
+
     return unTranslit.join();
   }
 
@@ -123,6 +123,7 @@ class Translit {
     );
 
     if (!regExp.hasMatch(source)) return source;
+
     var translit = [];
     var sourceSymbols = [];
 
